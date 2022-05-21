@@ -20,7 +20,7 @@ export const handler = async (event, context) => {
     },
 
     // How long the resetToken is valid for, in seconds (default is 24 hours)
-    expires: 60 * 60 * 24,
+    expires: 60 * 60 * 12,
 
     errors: {
       // for security reasons you may want to be vague here rather than expose
