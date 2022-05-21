@@ -56,12 +56,12 @@ export const hasRole = (roles: AllowedRoles): boolean => {
   const currentUserRoles = context.currentUser?.roles
 
   if (typeof roles === 'string') {
-    if (Array.isArray(currentUserRoles)) {
-      // roles to check is a string, currentUser.roles is an array
-      return currentUserRoles.some((allowedRole) => roles === allowedRole)
-    } else if (typeof currentUserRoles === 'string') {
+    if (typeof currentUserRoles === 'string') {
       // roles to check is a string, currentUser.roles is a string
       return currentUserRoles === roles
+    } else if (Array.isArray(currentUserRoles)) {
+      // roles to check is a string, currentUser.roles is an array
+      return false
     }
   }
 
