@@ -1,9 +1,10 @@
 // Just a temporary type. We'll replace this later
+import type { Comment as IComment } from 'types/graphql'
+
 import { useAuth } from '@redwoodjs/auth'
 import { useMutation } from '@redwoodjs/web'
-import { QUERY as CommentsQuery } from 'src/components/CommentsCell'
 
-import type { Comment as IComment } from 'types/graphql'
+import { QUERY as CommentsQuery } from 'src/components/CommentsCell'
 
 const DELETE = gql`
   mutation DeleteCommentMutation($id: Int!) {

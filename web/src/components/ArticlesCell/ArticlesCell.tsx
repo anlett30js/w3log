@@ -1,7 +1,8 @@
-import Article from 'src/components/Article'
-
 import type { ArticlesQuery } from 'types/graphql'
+
 import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+
+import Article from 'src/components/Article'
 
 export const QUERY = gql`
   query ArticlesQuery {

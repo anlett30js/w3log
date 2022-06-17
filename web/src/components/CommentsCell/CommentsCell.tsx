@@ -1,5 +1,7 @@
 import type { CommentsQuery } from 'types/graphql'
+
 import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+
 import Comment from 'src/components/Comment'
 
 export const QUERY = gql`

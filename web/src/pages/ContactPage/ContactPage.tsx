@@ -1,6 +1,5 @@
-import { MetaTags, useMutation } from '@redwoodjs/web'
 import { CreateContact, CreateContactVariables } from 'types/graphql'
-import { toast, Toaster } from '@redwoodjs/web/toast'
+
 import {
   Form,
   Label,
@@ -12,6 +11,8 @@ import {
   SubmitHandler,
   useForm,
 } from '@redwoodjs/forms'
+import { MetaTags, useMutation } from '@redwoodjs/web'
+import { toast, Toaster } from '@redwoodjs/web/toast'
 
 interface FormValues {
   name: string

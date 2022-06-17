@@ -1,3 +1,5 @@
+import { db } from 'api/src/lib/db'
+
 import {
   comments,
   comment,
@@ -6,7 +8,6 @@ import {
   deleteComment,
 } from './comments'
 import type { StandardScenario, PostOnlyScenario } from './comments.scenarios'
-import { db } from 'api/src/lib/db'
 
 // Generated boilerplate tests do not account for all circumstances
 // and can fail without adjustments, e.g. Float and DateTime types.

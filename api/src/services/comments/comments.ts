@@ -1,10 +1,11 @@
-import { db } from 'src/lib/db'
 import type { Prisma } from '@prisma/client'
 import type {
   QueryResolvers,
   MutationResolvers,
   CommentResolvers,
 } from 'types/graphql'
+
+import { db } from 'src/lib/db'
 
 export const comments = ({
   postId,

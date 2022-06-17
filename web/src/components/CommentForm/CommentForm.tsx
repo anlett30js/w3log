@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import {
   Form,
   Label,
@@ -7,12 +9,10 @@ import {
   FormError,
   SubmitHandler,
 } from '@redwoodjs/forms'
-
-import { QUERY as CommentsQuery } from 'src/components/CommentsCell'
-
 import { useMutation } from '@redwoodjs/web'
 import { toast } from '@redwoodjs/web/toast'
-import { useState } from 'react'
+
+import { QUERY as CommentsQuery } from 'src/components/CommentsCell'
 
 const CREATE = gql`
   mutation CreateCommentMutation($input: CreateCommentInput!) {

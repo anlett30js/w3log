@@ -1,12 +1,10 @@
+import MarkdownIt from 'markdown-it'
+import type { Post } from 'types/graphql'
+
 import { Link, routes } from '@redwoodjs/router'
 
-import CommentsCell from 'src/components/CommentsCell'
-
-import MarkdownIt from 'markdown-it'
-
 import CommentForm from 'src/components/CommentForm'
-
-import type { Post } from 'types/graphql'
+import CommentsCell from 'src/components/CommentsCell'
 
 interface Props {
   article: Omit<Post, 'createdAt'>
